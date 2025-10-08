@@ -1,0 +1,192 @@
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay for content */
+.overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+/* App title */
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: rgba(225, 54, 54, 0.704);
+}
+
+/* Description */
+.description {
+  font-size: 1.3rem ;
+  margin-bottom: 10px;
+  color: rgb(54, 120, 225);
+}
+
+/* Card counter */
+.count {
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.932);
+}
+
+/* Flashcard container */
+.flashcard-container {
+  perspective: 1000px;
+  width: 400px;
+  height: 250px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+.flashcard-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  color: #000000;
+}
+
+/* Back side rotated */
+.flashcard-back {
+  transform: rotateY(180deg);
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.nav-btn {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-btn:hover {
+  background: #574fd6;
+  transform: scale(1.05);
+}
+
+.nav-btn:disabled {
+  background: #b0bec5;
+  color: #eee;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submit-btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  background-color: #6c63ff; 
+  transition: all 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #574fd6;
+  transform: scale(1.05);
+}
+
+.submit-btn:disabled {
+  background-color: #b0bec5;
+  color: #eee;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* Correct input */
+.input-correct {
+  border: 2px solid green;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+/* Wrong input */
+.input-wrong {
+  border: 2px solid red;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* Guess Section  */
+.guess-section ,
+.stats{
+  color: black;
+}
+
+/* Extra Controls  */
+.extra-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.extra-controls button {
+  background: #4cafef;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.extra-controls button:hover {
+  background: #2196f3;
+  transform: scale(1.05);
+}
+
+.extra-controls button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+  transform: none;
+}
