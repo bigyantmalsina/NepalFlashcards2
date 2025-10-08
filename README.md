@@ -4,7 +4,7 @@ Submitted by: **Bigyan Timalsina**
 
 This web app: **is an interactive flashcard application that helps users learn fun and educational facts about Nepal. Users can guess answers, flip cards, track streaks, and even shuffle or master cards as they study.**
 
-Time spent: **X hours spent in total**
+Time spent: **5 hours spent in total**
 
 ---
 
@@ -17,7 +17,7 @@ The following **required** functionality is completed:
   - Clicking on the submit button with an **incorrect** answer shows visual feedback that it is wrong  
   - Clicking on the submit button with a **correct** answer shows visual feedback that it is correct  
 
-- [x] **The user can navigate through an ordered list of cards**
+- [x] **The user can nagit add .vigate through an ordered list of cards**
   - A forward/next button displayed on the card navigates to the next card in a set sequence when clicked  
   - A previous/back button displayed on the card returns to the previous card in the set sequence when clicked  
   - Both the next and back buttons have visual indication that the user is at the beginning or end of the list (buttons are disabled and grayed out), not allowing for wrap-around navigation  
