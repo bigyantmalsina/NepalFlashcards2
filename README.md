@@ -62,7 +62,7 @@ Here's a walkthrough of implemented user stories:
 
 <img src='./src/Project.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with **Kap** (for macOS)
+GIF created with **Adobe**
 
 ---
 
